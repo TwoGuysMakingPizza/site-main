@@ -6,9 +6,9 @@ permalink: /about/
 
 <div class="px-40 flex flex-1 justify-center py-5">
     <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About TwoGuysMakingPizza</h2>
+        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Two Guys Making Pizza</h2>
         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-            At TwoGuysMakingPizza, we serve more than just pizza—we bring the authentic Neapolitan experience directly to you. What started as backyard fun with friends has evolved into a thriving catering business that's passionate about craft pizza making.
+            At Two Guys Making Pizza, we serve more than just pizza—we bring the authentic Neapolitan experience directly to you. What started as backyard fun with friends has evolved into a thriving catering business that's passionate about craft pizza making.
         </p>
         
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Story</h2>

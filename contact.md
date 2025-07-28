@@ -6,7 +6,7 @@ permalink: /contact/
 
 <div class="px-40 flex flex-1 justify-center py-5">
     <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact TwoGuysMakingPizza</h2>
+        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact Two Guys Making Pizza</h2>
         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
             Ready to discuss your next event? We'd love to hear from you! Get in touch to learn more about our Neapolitan pizza catering services.
         </p>
@@ -75,7 +75,7 @@ permalink: /contact/
                             </div>
                             <div>
                                 <p class="text-white font-medium">Email</p>
-                                <p class="text-[#adadad] text-sm">hello@twoguysmakingpizza.com</p>
+                                <p class="text-[#adadad] text-sm">hello@Two Guys Making Pizza.com</p>
                             </div>
                         </div>
                         

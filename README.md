@@ -26,6 +26,7 @@ A modern, responsive website built with Jekyll and Tailwind CSS for GitHub Pages
 
 - Ruby (version 2.7 or higher)
 - Bundler gem
+- Node.js (version 14 or higher)
 
 ### Setup
 
@@ -40,19 +41,26 @@ A modern, responsive website built with Jekyll and Tailwind CSS for GitHub Pages
    bundle install
    ```
 
-3. Run the development server:
+3. Install Node dependencies and build CSS:
    ```bash
-   bundle exec jekyll serve
+  npm install
+  npm run build:css
+   ```
+4. Run the development server:
+   ```bash
+  bundle exec jekyll serve
    ```
 
 4. Open your browser and visit `http://localhost:4000`
 
 ### Development Commands
 
-- `bundle exec jekyll serve` - Start development server
-- `bundle exec jekyll serve --livereload` - Start server with live reload
-- `bundle exec jekyll build` - Build the site for production
-- `bundle exec jekyll serve --drafts` - Include draft posts
+-- `bundle exec jekyll serve` - Start development server
+-- `bundle exec jekyll serve --livereload` - Start server with live reload
+-- `bundle exec jekyll build` - Build the site for production
+-- `bundle exec jekyll serve --drafts` - Include draft posts
+-- `npm install` - Install Node dependencies
+-- `npm run build:css` - Build Tailwind CSS
 
 ## GitHub Pages Deployment
 

@@ -8,7 +8,7 @@ permalink: /reviews/
     <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Customer Reviews</h2>
         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-            Don't just take our word for it - see what our customers say about their TwoGuysMakingPizza experience.
+            Don't just take our word for it - see what our customers say about their Two Guys Making Pizza experience.
         </p>
         
         <div class="flex flex-col gap-8 overflow-x-hidden bg-[#1a1a1a] p-4">
@@ -61,7 +61,7 @@ permalink: /reviews/
                     </div>
                 </div>
                 <p class="text-white text-base font-normal leading-normal">
-                    "TwoGuysMakingPizza catered our wedding, and it was a huge hit! The pizzas were delicious, and the service was excellent. Our guests raved about the food! The guys were professional, friendly, and made the whole experience stress-free. Highly recommend for any event!"
+                    "Two Guys Making Pizza catered our wedding, and it was a huge hit! The pizzas were delicious, and the service was excellent. Our guests raved about the food! The guys were professional, friendly, and made the whole experience stress-free. Highly recommend for any event!"
                 </p>
             </div>
             
@@ -114,7 +114,7 @@ permalink: /reviews/
                     </div>
                 </div>
                 <p class="text-white text-base font-normal leading-normal">
-                    "We hired TwoGuysMakingPizza for a corporate event, and it was a fantastic experience. The pizzas were top-notch, and the team was professional and friendly. They kept the pizzas coming throughout the entire event. Our employees loved it and it was definitely a hit!"
+                    "We hired Two Guys Making Pizza for a corporate event, and it was a fantastic experience. The pizzas were top-notch, and the team was professional and friendly. They kept the pizzas coming throughout the entire event. Our employees loved it and it was definitely a hit!"
                 </p>
             </div>
             
@@ -167,7 +167,7 @@ permalink: /reviews/
                     </div>
                 </div>
                 <p class="text-white text-base font-normal leading-normal">
-                    "TwoGuysMakingPizza provided catering for our family reunion. The pizzas were tasty, and the variety was great. A few pizzas were slightly overcooked, but overall, it was a positive experience. The setup was smooth and they were very accommodating."
+                    "Two Guys Making Pizza provided catering for our family reunion. The pizzas were tasty, and the variety was great. A few pizzas were slightly overcooked, but overall, it was a positive experience. The setup was smooth and they were very accommodating."
                 </p>
             </div>
             

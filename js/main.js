@@ -1,15 +1,7 @@
 // Main JavaScript functionality for Heat Tire Feel
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-        });
-    }
+    // Removed default mobile menu toggle to avoid conflict with custom nav script
 
     // Menu category tabs (for menu page)
     const categoryTabs = document.querySelectorAll('.category-tab');

@@ -1,0 +1,16 @@
+{
+  "name": "heat-tire-feel",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "postcss styles/main.css -o styles/main.css",
+    "watch:css": "postcss styles/main.css -o styles/main.css --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.0.0",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.4.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/container-queries": "^0.1.0"
+  }
+}

@@ -39,7 +39,7 @@
                 </defs>
               </svg>
             </div>
-            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">TwoGuysMakingPizza</h2>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Two Guys Making Pizza</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
@@ -66,7 +66,7 @@
                   <h1
                     class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] text-center"
                   >
-                    TwoGuysMakingPizza
+                    Two Guys Making Pizza
                   </h1>
                   <button
                     class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-black text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
@@ -78,7 +78,7 @@
             </div>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Us</h2>
             <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-              At TwoGuysMakingPizza, we serve more than just pizza—we bring the Neapolitan experience to you. What started as backyard fun with friends became a thriving catering
+              At Two Guys Making Pizza, we serve more than just pizza—we bring the Neapolitan experience to you. What started as backyard fun with friends became a thriving catering
               business.
             </p>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">How We Run Events</h2>
@@ -154,7 +154,7 @@
                   </div>
                 </div>
                 <p class="text-white text-base font-normal leading-normal">
-                  "TwoGuysMakingPizza catered our wedding, and it was a huge hit! The pizzas were delicious, and the service was excellent. Our guests raved about the food!"
+                  "Two Guys Making Pizza catered our wedding, and it was a huge hit! The pizzas were delicious, and the service was excellent. Our guests raved about the food!"
                 </p>
               </div>
               <div class="flex flex-col gap-3 bg-[#1a1a1a]">
@@ -206,7 +206,7 @@
                   </div>
                 </div>
                 <p class="text-white text-base font-normal leading-normal">
-                  "We hired TwoGuysMakingPizza for a corporate event, and it was a fantastic experience. The pizzas were top-notch, and the team was professional and friendly.
+                  "We hired Two Guys Making Pizza for a corporate event, and it was a fantastic experience. The pizzas were top-notch, and the team was professional and friendly.
                   Highly recommend!"
                 </p>
               </div>
@@ -259,7 +259,7 @@
                   </div>
                 </div>
                 <p class="text-white text-base font-normal leading-normal">
-                  "TwoGuysMakingPizza provided catering for our family reunion. The pizzas were tasty, and the variety was great. A few pizzas were slightly overcooked, but
+                  "Two Guys Making Pizza provided catering for our family reunion. The pizzas were tasty, and the variety was great. A few pizzas were slightly overcooked, but
                   overall, it was a positive experience."
                 </p>
               </div>
@@ -289,7 +289,7 @@
                   </div>
                 </a>
               </div>
-              <p class="text-[#adadad] text-base font-normal leading-normal">© 2024 TwoGuysMakingPizza. All rights reserved.</p>
+              <p class="text-[#adadad] text-base font-normal leading-normal">© 2024 Two Guys Making Pizza. All rights reserved.</p>
             </footer>
           </div>
         </footer>
