@@ -1,7 +1,7 @@
 title: Two Guys Making Pizza
 description: Authentic Neapolitan Pizza Catering - We bring the experience to you
-url: ""
-baseurl: ""
+url: "https://gold-requiem.github.io"
+baseurl: "/heat-tire-feel"
 
 # Build settings
 markdown: kramdown
