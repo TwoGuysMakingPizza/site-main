@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Book
+title: Book Us
 permalink: /book/
 ---
 

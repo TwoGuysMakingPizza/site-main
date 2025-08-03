@@ -2,9 +2,10 @@
   "name": "heat-tire-feel",
   "version": "1.0.0",
   "scripts": {
-    "build:css": "postcss styles/main.css -o styles/main.css",
-    "watch:css": "postcss styles/main.css -o styles/main.css --watch"
+    "build:css": "tailwindcss -i ./styles/input.css -o ./styles/main.css",
+    "watch:css": "tailwindcss -i ./styles/input.css -o ./styles/main.css --watch"
   },
+  "keywords": [],
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "postcss": "^8.0.0",
