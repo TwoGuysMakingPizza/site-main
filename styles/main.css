@@ -837,6 +837,18 @@ select {
   min-height: 100vh;
 }
 
+.min-h-\[320px\] {
+  min-height: 320px;
+}
+
+.min-h-\[4000px\] {
+  min-height: 4000px;
+}
+
+.min-h-\[400px\] {
+  min-height: 400px;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -1033,8 +1045,17 @@ select {
   background-color: rgb(252 165 165 / var(--tw-bg-opacity, 1));
 }
 
+.bg-red-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 29 29 / var(--tw-bg-opacity, 1));
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-center {
@@ -1122,11 +1143,6 @@ select {
   text-align: center;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-\[20px\] {
   font-size: 20px;
 }
@@ -1148,10 +1164,6 @@ select {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.font-black {
-  font-weight: 900;
 }
 
 .font-bold {
@@ -1182,10 +1194,6 @@ select {
   letter-spacing: -0.015em;
 }
 
-.tracking-\[-0\.033em\] {
-  letter-spacing: -0.033em;
-}
-
 .tracking-\[0\.015em\] {
   letter-spacing: 0.015em;
 }
@@ -1203,11 +1211,6 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.drop-shadow-lg {
-  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-colors {
@@ -1314,18 +1317,9 @@ select {
     padding-right: 1.25rem;
   }
 
-  .\@\[480px\]\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .\@\[480px\]\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .\@\[480px\]\:font-black {
-    font-weight: 900;
   }
 
   .\@\[480px\]\:font-bold {
@@ -1334,14 +1328,6 @@ select {
 
   .\@\[480px\]\:leading-normal {
     line-height: 1.5;
-  }
-
-  .\@\[480px\]\:leading-tight {
-    line-height: 1.25;
-  }
-
-  .\@\[480px\]\:tracking-\[-0\.033em\] {
-    letter-spacing: -0.033em;
   }
 
   .\@\[480px\]\:tracking-\[0\.015em\] {
