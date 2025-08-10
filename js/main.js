@@ -1,6 +1,15 @@
 // Main JavaScript functionality for Heat Tire Feel
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Check for success parameter and show banner
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('submitted') === 'true') {
+        showSuccessBanner();
+        // Clean URL by removing the parameter
+        const newUrl = window.location.pathname;
+        window.history.replaceState({}, document.title, newUrl);
+    }
+
     // Removed default mobile menu toggle to avoid conflict with custom nav script
 
     // Menu category tabs (for menu page)
@@ -80,6 +89,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     forms.forEach(form => {
         form.addEventListener('submit', function(e) {
+            // Don't prevent default for Formspree forms
+            if (form.action.includes('formspree.io')) {
+                return; // Let the form submit normally to Formspree
+            }
+            
             e.preventDefault();
             
             // Basic form validation
@@ -132,11 +146,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add loading animation for buttons
+    // Add loading animation for buttons (except Formspree forms)
     const buttons = document.querySelectorAll('button[type="submit"]');
     
     buttons.forEach(button => {
         button.addEventListener('click', function() {
+            // Don't interfere with Formspree forms
+            const form = this.closest('form');
+            if (form && form.action.includes('formspree.io')) {
+                return; // Let Formspree handle the button state
+            }
+            
             const originalText = this.textContent;
             this.textContent = 'Processing...';
             this.disabled = true;
@@ -166,4 +186,26 @@ function validateEmail(email) {
 function validatePhone(phone) {
     const re = /^[\+]?[1-9][\d]{0,15}$/;
     return re.test(phone.replace(/[\s\-\(\)]/g, ''));
+}
+
+// Success banner functions
+function showSuccessBanner() {
+    const banner = document.getElementById('success-banner');
+    if (banner) {
+        banner.classList.remove('hidden');
+        banner.classList.add('block');
+        
+        // Auto-hide after 10 seconds
+        setTimeout(() => {
+            hideBanner();
+        }, 10000);
+    }
+}
+
+function hideBanner() {
+    const banner = document.getElementById('success-banner');
+    if (banner) {
+        banner.classList.add('hidden');
+        banner.classList.remove('block');
+    }
 }

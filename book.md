@@ -12,37 +12,41 @@ permalink: /book/
         </p>
         
         <div class="bg-[#262626] p-8 rounded-lg mx-4 my-6">
-            <form class="space-y-6">
+            <form action="https://formspree.io/f/mnnzloyv" method="POST" class="space-y-6">
+                <!-- spam protection field -->
+                <input type="text" name="_gotcha" style="display:none">
+                <!-- redirect after submit -->
+                <input type="hidden" name="_redirect" value="/?submitted=true">
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-white text-sm font-medium mb-2">First Name *</label>
-                        <input type="text" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                        <input type="text" name="first_name" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
                     </div>
                     <div>
                         <label class="block text-white text-sm font-medium mb-2">Last Name *</label>
-                        <input type="text" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                        <input type="text" name="last_name" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
                     </div>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-white text-sm font-medium mb-2">Email *</label>
-                        <input type="email" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                        <input type="email" name="email" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
                     </div>
                     <div>
                         <label class="block text-white text-sm font-medium mb-2">Phone Number</label>
-                        <input type="tel" class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                        <input type="tel" name="phone" class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
                     </div>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-white text-sm font-medium mb-2">Event Date *</label>
-                        <input type="date" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                        <input type="date" name="event_date" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
                     </div>
                     <div>
                         <label class="block text-white text-sm font-medium mb-2">Number of Guests *</label>
-                        <select required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                        <select name="guest_count" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
                             <option value="">Select guest count</option>
                             <option value="10-25">10-25 guests</option>
                             <option value="25-50">25-50 guests</option>
@@ -56,7 +60,7 @@ permalink: /book/
                 
                 <div>
                     <label class="block text-white text-sm font-medium mb-2">Event Type</label>
-                    <select class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                    <select name="event_type" class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
                         <option value="">Select event type</option>
                         <option value="wedding">Wedding</option>
                         <option value="corporate">Corporate Event</option>
@@ -69,7 +73,7 @@ permalink: /book/
                 
                 <div>
                     <label class="block text-white text-sm font-medium mb-2">Event Location</label>
-                    <input type="text" placeholder="Address or general area" class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                    <input type="text" name="event_location" placeholder="Address or general area" class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
                 </div>
                 
                 <div>
@@ -92,7 +96,7 @@ permalink: /book/
                 
                 <div>
                     <label class="block text-white text-sm font-medium mb-2">Additional Details</label>
-                    <textarea rows="4" placeholder="Tell us about your event, any dietary restrictions, preferred pizza styles, or special requests..." class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white resize-none"></textarea>
+                    <textarea name="additional_details" rows="4" placeholder="Tell us about your event, any dietary restrictions, preferred pizza styles, or special requests..." class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white resize-none"></textarea>
                 </div>
                 
                 <div class="flex justify-center pt-4">
