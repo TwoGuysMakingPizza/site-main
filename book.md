@@ -34,7 +34,7 @@ permalink: /book/
                         <input type="email" name="email" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
                     </div>
                     <div>
-                        <label class="block text-white text-sm font-medium mb-2">Phone Number</label>
+                        <label class="block text-white text-sm font-medium mb-2">Phone Number *</label>
                         <input type="tel" name="phone" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
                     </div>
                 </div>
