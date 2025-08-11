@@ -141,7 +141,7 @@ permalink: /book/
         <div class="bg-[#262626] p-6 rounded-lg mx-4 my-6">
             <h3 class="text-white text-lg font-bold mb-3">Quick Facts</h3>
             <ul class="text-[#adadad] space-y-2">
-                <li>• All-you-can-eat style service</li>
+                <li>• Unlimited Neapolitan pizza</li>
                 <li>• Fresh pizzas every 2-3 minutes</li>
                 <li>• Can serve up to 150 guests</li>
                 <li>• Only need 10x10 space</li>
