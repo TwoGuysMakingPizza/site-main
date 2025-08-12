@@ -85,11 +85,7 @@ permalink: /book/
                         </label>
                         <label class="flex items-center text-white">
                             <input type="radio" name="setup" value="outdoor" class="mr-2">
-                            Outdoor (we bring our own power)
-                        </label>
-                        <label class="flex items-center text-white">
-                            <input type="radio" name="setup" value="either" class="mr-2">
-                            Either works
+                            Outdoor (propane oven, we provide the propane)
                         </label>
                     </div>
                 </div>
@@ -115,7 +111,7 @@ permalink: /book/
                 </div>
                 <div>
                     <h4 class="text-white font-semibold">We'll Contact You</h4>
-                    <p class="text-[#adadad] text-sm">Within 24 hours, we'll reach out to discuss your event details and answer any questions.</p>
+                    <p class="text-[#adadad] text-sm">Within 24 hours to discuss your catering needs and share pricing options.</p>
                 </div>
             </div>
             <div class="flex items-start gap-3">
@@ -143,7 +139,7 @@ permalink: /book/
             <ul class="text-[#adadad] space-y-2">
                 <li>• Unlimited Neapolitan pizza</li>
                 <li>• Fresh pizzas every 2-3 minutes</li>
-                <li>• Can serve up to 150 guests</li>
+                <li>• Can serve 150+ guests</li>
                 <li>• Only need 10x10 space</li>
                 <li>• Complete setup and breakdown included</li>
                 <li>• All ingredients imported from Italy</li>
