@@ -1,0 +1,148 @@
+---
+layout: default
+title: Book a Workshop
+permalink: /workshops/
+---
+
+<div class="px-40 flex flex-1 justify-center py-5">
+    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Book a Pizza Workshop</h2>
+        <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+            Interested in learning the art of Neapolitan pizza? Fill out the form below and we'll get back to you within 24 hours to confirm your spot.
+        </p>
+
+        <div class="bg-[#262626] p-8 rounded-lg mx-4 my-6">
+            <form action="https://formspree.io/f/meereeen" method="POST" class="space-y-6">
+                <!-- Spam protection -->
+                <input type="text" name="_gotcha" style="display:none">
+                <!-- Redirect after submit -->
+                <input type="hidden" name="_redirect" value="/?submitted=true">
+
+                <!-- Name -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-white text-sm font-medium mb-2">First Name *</label>
+                        <input type="text" name="first_name" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                    </div>
+                    <div>
+                        <label class="block text-white text-sm font-medium mb-2">Last Name *</label>
+                        <input type="text" name="last_name" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-white text-sm font-medium mb-2">Email *</label>
+                        <input type="email" name="email" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                    </div>
+                    <div>
+                        <label class="block text-white text-sm font-medium mb-2">Phone Number *</label>
+                        <input type="tel" name="phone" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                    </div>
+                </div>
+
+                <!-- Workshop Type -->
+                <div>
+                    <label class="block text-white text-sm font-medium mb-2">Workshop Type *</label>
+                    <select name="workshop_type" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                        <option value="">Select workshop type</option>
+                        <option value="home_workshop">Home Workshop — at your house with family & friends</option>
+                        <option value="private_workshop">Private Workshop — at our commercial kitchen</option>
+                    </select>
+                </div>
+
+                <!-- Number of People -->
+                <div>
+                    <label class="block text-white text-sm font-medium mb-2">Number of People *</label>
+                    <select name="guest_count" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                        <option value="">Select number of people</option>
+                        <option value="1-2">1–2 people</option>
+                        <option value="3-5">3–5 people</option>
+                        <option value="6-8">6–8 people</option>
+                        <option value="9-10">9–10 people</option>
+                    </select>
+                </div>
+
+                <!-- Preferred Date -->
+                <div>
+                    <label class="block text-white text-sm font-medium mb-2">Preferred Date *</label>
+                    <input type="date" name="preferred_date" required class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                </div>
+
+                <!-- Occasion -->
+                <div>
+                    <label class="block text-white text-sm font-medium mb-2">Occasion</label>
+                    <select name="occasion" class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white">
+                        <option value="">Select an occasion (optional)</option>
+                        <option value="date_night">Date Night</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="bachelorette">Bachelorette / Bachelor Party</option>
+                        <option value="team_building">Team Building</option>
+                        <option value="family">Family Get-Together</option>
+                        <option value="friends">Night Out with Friends</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Additional Notes -->
+                <div>
+                    <label class="block text-white text-sm font-medium mb-2">Additional Notes</label>
+                    <textarea name="additional_notes" rows="4" placeholder="Any questions, dietary restrictions, or special requests..." class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#363636] rounded-lg text-white focus:outline-none focus:border-white resize-none"></textarea>
+                </div>
+
+                <div class="flex justify-center pt-4">
+                    <button type="submit" class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-black text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#333] transition-colors">
+                        <span class="truncate">Send Workshop Request</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- What to Expect -->
+        <h3 class="text-white text-[20px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">What to Expect</h3>
+        <div class="px-4 space-y-4">
+            <div class="flex items-start gap-3">
+                <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span class="text-white text-sm font-bold">1</span>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold">We'll Reach Out</h4>
+                    <p class="text-[#adadad] text-sm">Within 24 hours to confirm your date, workshop type, and answer any questions.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span class="text-white text-sm font-bold">2</span>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold">Get Ready to Learn</h4>
+                    <p class="text-[#adadad] text-sm">We bring all ingredients, tools, and ovens. Just bring yourself and your drinks — it's BYOB!</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span class="text-white text-sm font-bold">3</span>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold">Make & Eat Pizza</h4>
+                    <p class="text-[#adadad] text-sm">Learn the traditions, stretch the dough, top your pizza, and bake it in 90 seconds. Then eat together!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Facts -->
+        <div class="bg-[#262626] p-6 rounded-lg mx-4 my-6">
+            <h3 class="text-white text-lg font-bold mb-3">Good to Know</h3>
+            <ul class="text-[#adadad] space-y-2">
+                <li>• Private workshops limited to 10 spots</li>
+                <li>• All ingredients and tools provided</li>
+                <li>• BYOB — bring your drinks of choice</li>
+                <li>• ~2 hours from start to finish</li>
+                <li>• Take home your own pizza dough</li>
+                <li>• No experience needed — beginners welcome</li>
+            </ul>
+        </div>
+
+    </div>
+</div>

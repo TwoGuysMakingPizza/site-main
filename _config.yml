@@ -30,5 +30,7 @@ plugins:
 navigation:
   - name: "Home"
     link: "/"
+  - name: "Workshops"
+    link: "/workshops/"
   - name: "Book Us"
     link: "/book/"
