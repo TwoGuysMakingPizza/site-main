@@ -12,27 +12,30 @@ permalink: /
     </div>
 </div>
 
-<div class="px-40 flex flex-1 justify-center py-5">
+<div class="flex flex-1 justify-center py-5" style="padding-left: clamp(1rem, 5vw, 10rem); padding-right: clamp(1rem, 5vw, 10rem);">
     <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+
+        <!-- ═══════════════ HERO BANNER ═══════════════ -->
         <div class="@container">
             <div class="@[480px]:p-4">
-                <div
-                    class="flex min-h-[400px] flex-col gap-6 bg-contain bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-end p-4"
-                    style='background-image: url("assets/tgmp-logo-bg-transparent.png");'>
+                <div class="flex flex-col items-center justify-end gap-6 @[480px]:gap-8 @[480px]:rounded-xl overflow-hidden" style="min-height: 380px;">
+                    <img src="{{ '/assets/TGMPherobanner.png' | relative_url }}" alt="TwoGuysMakingPizza — True Neapolitan Pizza" class="w-full max-w-[720px]" style="display: block;">
                     <a href="{{ '/book/' | relative_url }}"
-                        style="background-color: white;"
-                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-black text-black text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
-                        
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-white text-black text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]" style="margin-bottom: 1.5rem;">
                         <span class="truncate">Book Now!</span>
                     </a>
                 </div>
             </div>
         </div>
+
+        <!-- ═══════════════ ABOUT US ═══════════════ -->
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Us</h2>
         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
             At TwoGuysMakingPizza, we serve more than just pizza, we bring the Neapolitan experience to you. What started as backyard fun with friends became a thriving catering
             business.
         </p>
+
+        <!-- ═══════════════ HOW WE RUN EVENTS ═══════════════ -->
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">How We Run Events</h2>
         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
             We craft real Neapolitan pizza with just four ingredients: Italian 00 flour, water, salt, and fresh yeast. Our dough is prepared 24 hours ahead of each event for
@@ -40,15 +43,48 @@ permalink: /
             coming every few minutes, even for large events up to 150 guests. We will craft together a Menu of 4-5 Neapolitan pizzas specifically for your event. Everything is
             made fresh onsite, we handle setup and teardown for an stress-free experience.
         </p>
+
+        <!-- ═══════════════ OUR SETUP ═══════════════ -->
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Setup</h2>
         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
             We're not a Food Truck. Our mobile set up goes wherever you need us, inside, outside, backyard or beyond. No parking, weight or space restrictions. Just a 10X10 space.
         </p>
+
+        <!-- ═══════════════ PHOTO GALLERY ═══════════════ -->
+        <div class="px-4 pt-4 pb-6">
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="overflow-hidden rounded-lg" style="aspect-ratio: 4/3;">
+                    <img src="{{ '/assets/oven1.png' | relative_url }}" alt="Fresh Neapolitan pizza out of the oven" class="w-full h-full" style="object-fit: cover;">
+                </div>
+                <div class="overflow-hidden rounded-lg" style="aspect-ratio: 4/3;">
+                    <img src="{{ '/assets/oven2.png' | relative_url }}" alt="Pizza baking in the Ooni oven at 850°F" class="w-full h-full" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════════════ VIDEO HIGHLIGHT ═══════════════ -->
+        <div class="flex justify-center px-4 pt-2 pb-6">
+            <div class="overflow-hidden rounded-lg w-full" style="max-width: 360px; aspect-ratio: 9/16;">
+                <video
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    class="w-full h-full"
+                    style="object-fit: cover;"
+                    src="{{ '/assets/highlight.mp4' | relative_url }}"
+                    type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- ═══════════════ QUALITY ═══════════════ -->
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Quality</h2>
         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
             We use only top-quality, authentic ingredients for unbeatable taste, all imported and made in Italy.
         </p>
-        <!-- Catering Events Section -->
+
+        <!-- ═══════════════ CATERING EVENTS ═══════════════ -->
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Catering Events</h2>
         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
             Bring the authentic Neapolitan pizza experience to your next event. We handle everything so you can enjoy the moment.
@@ -69,7 +105,7 @@ permalink: /
                     </p>
                 </div>
                 <div class="flex flex-col gap-3 bg-[#262626] p-6 rounded-lg border border-[#363636]">
-                    <p class="text-white text-lg font-semibold leading-normal">⚙️ Full Setup & Teardown</p>
+                    <p class="text-white text-lg font-semibold leading-normal">⚙️ Full Setup &amp; Teardown</p>
                     <p class="text-white text-base font-normal leading-normal">
                         We handle all setup and teardown for a completely stress-free experience. All we need is a 10×10 space — indoors or outdoors.
                     </p>
@@ -85,19 +121,19 @@ permalink: /
 
         <div class="flex px-4 py-3 justify-center">
             <a href="{{ '/book/' | relative_url }}"
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-black text-white text-base font-bold leading-normal tracking-[0.015em]">
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-white text-black text-base font-bold leading-normal tracking-[0.015em]">
                 <span class="truncate">Book Us For Your Next Event</span>
             </a>
         </div>
 
-        <!-- Workshops / Classes -->
+        <!-- ═══════════════ PIZZA WORKSHOPS ═══════════════ -->
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Pizza Workshops</h2>
         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
             New! We're bringing the Two Guys Making Pizza experience to a hands-on class — perfect for a date night, a fun night with friends, or a unique private event.
         </p>
 
         <div class="flex flex-col gap-8 overflow-x-hidden bg-[#1a1a1a] p-4">
-            <!-- Two options -->
+            <!-- Two workshop options -->
             <div class="grid md:grid-cols-2 gap-4">
                 <div class="flex flex-col gap-3 bg-[#262626] p-6 rounded-lg border border-[#363636]">
                     <p class="text-white text-lg font-semibold leading-normal">Home Workshops</p>
@@ -106,7 +142,7 @@ permalink: /
                     </p>
                     <div class="flex gap-2">
                         <a href="{{ '/workshops/' | relative_url }}"
-                        class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-black text-white text-base font-bold leading-normal tracking-[0.015em]">
+                        class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-white text-black text-base font-bold leading-normal tracking-[0.015em]">
                         <span class="truncate">Request a Pizza Class at Your Home</span>
                         </a>
                     </div>
@@ -122,7 +158,7 @@ permalink: /
                     </p>
                     <div class="flex gap-2">
                         <a href="{{ '/workshops/' | relative_url }}"
-                        class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-black text-white text-base font-bold leading-normal tracking-[0.015em]">
+                        class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-white text-black text-base font-bold leading-normal tracking-[0.015em]">
                         <span class="truncate">Request a Private Class</span>
                         </a>
                     </div>
@@ -151,7 +187,7 @@ permalink: /
                 </div>
             </div>
 
-            <!-- FAQ (short + high conversion) -->
+            <!-- FAQ -->
             <div class="flex flex-col gap-3 bg-[#1a1a1a]">
                 <p class="text-white text-lg font-semibold leading-normal">FAQ</p>
                 <div class="flex flex-col gap-3">
@@ -171,28 +207,17 @@ permalink: /
             </div>
         </div>
 
+        <!-- ═══════════════ CUSTOMER REVIEWS ═══════════════ -->
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Customer Reviews</h2>
         <div class="flex flex-col gap-8 overflow-x-hidden bg-[#1a1a1a] p-4">
             <div class="flex flex-col gap-3 bg-[#1a1a1a]">
                 <p class="text-white text-base font-medium leading-normal">Silvia P.</p>
                 <div class="flex gap-0.5">
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                            <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
-                        </svg>
-                    </div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
-                    </div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
-                    </div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
-                    </div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
-                    </div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
                 </div>
                 <p class="text-white text-base font-normal leading-normal">
                     I recently hired Two Guys Making Pizza for two separate club events—a Tennis Social and a Golf Social—and they were absolutely fantastic. From start to finish, they were professional, organized, and a pleasure to work with. Their setup was seamless and added a great energy to both events. Guests loved the interactive aspect of watching the pizzas being made fresh on-site, and the smell alone drew a crowd! But the real highlight? The pizza. Truly phenomenal—crispy, flavorful, and made with high-quality ingredients. It was the talk of both events and left everyone wanting more. I highly recommend Two Guys Making Pizza for any event. They deliver not just great food, but a memorable experience.
@@ -201,15 +226,11 @@ permalink: /
             <div class="flex flex-col gap-3 bg-[#1a1a1a]">
                 <p class="text-white text-base font-medium leading-normal">Jen M</p>
                 <div class="flex gap-0.5">
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                            <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
-                        </svg>
-                    </div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
                 </div>
                 <p class="text-white text-base font-normal leading-normal">
                     We hired @twoguysmakingpizza for our HS Girls Lacrosse banquet and they did an amazing job they fed over 100 girls and parents and the pizza was amazing! I would highly recommend them for events and parties!
@@ -218,11 +239,11 @@ permalink: /
             <div class="flex flex-col gap-3 bg-[#1a1a1a]">
                 <p class="text-white text-base font-medium leading-normal">Lee S. C.</p>
                 <div class="flex gap-0.5">
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
                 </div>
                 <p class="text-white text-base font-normal leading-normal">
                     The best! I had them cater my birthday with ~40 people last year and they were a huge hit! The pizzas are delicious and fresh, and everyone loved the entertainment of watching the pizzas be made! Two Guys are such a unique and easy catering idea that everyone will love - can't recommend them enough!
@@ -231,11 +252,11 @@ permalink: /
             <div class="flex flex-col gap-3 bg-[#1a1a1a]">
                 <p class="text-white text-base font-medium leading-normal">Christopher M</p>
                 <div class="flex gap-0.5">
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
-                    <div class="text-yellow-500" data-icon="Star" data-size="20px" data-weight="fill"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+                    <div class="text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
                 </div>
                 <p class="text-white text-base font-normal leading-normal">
                     150 amazing pizzas for 130 guests in 3 hours!!! Amazing job!!!
