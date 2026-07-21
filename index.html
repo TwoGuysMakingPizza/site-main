@@ -19,9 +19,11 @@ permalink: /
         <div class="@container">
             <div class="@[480px]:p-4">
                 <div class="flex flex-col items-center justify-end gap-6 @[480px]:gap-8 @[480px]:rounded-xl overflow-hidden" style="min-height: 380px;">
-                    <img src="{{ '/assets/TGMPherobanner.png' | relative_url }}" alt="TwoGuysMakingPizza — True Neapolitan Pizza" class="w-full max-w-[720px]" style="display: block;">
-                    <a href="{{ '/book/' | relative_url }}"
-                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-white text-black text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]" style="margin-bottom: 1.5rem;">
+                    <img src="{{ '/assets/TGMPherobanner.png' | relative_url }}"
+                         alt="TwoGuysMakingPizza — True Neapolitan Pizza"
+                         class="w-full max-w-[720px]"
+                         style="display: block;">
+                    <a href="{{ '/book/' | relative_url }}" class="btn-primary" style="min-width: 140px; margin-bottom: 1.5rem;">
                         <span class="truncate">Book Now!</span>
                     </a>
                 </div>
@@ -31,39 +33,44 @@ permalink: /
         <!-- ═══════════════ ABOUT US ═══════════════ -->
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Us</h2>
         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-            At TwoGuysMakingPizza, we serve more than just pizza, we bring the Neapolitan experience to you. What started as backyard fun with friends became a thriving catering
-            business.
+            At TwoGuysMakingPizza, we serve more than just pizza, we bring the Neapolitan experience to you. What started as backyard fun with friends became a thriving catering business.
         </p>
 
         <!-- ═══════════════ HOW WE RUN EVENTS ═══════════════ -->
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">How We Run Events</h2>
         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-            We craft real Neapolitan pizza with just four ingredients: Italian 00 flour, water, salt, and fresh yeast. Our dough is prepared 24 hours ahead of each event for
-            perfect texture: light and digestible yet delicious. Each pizza cooks in just 90 seconds at 850°F in our Ooni ovens. Our all-you-can-eat buffet style keeps hot pizzas
-            coming every few minutes, even for large events up to 150 guests. We will craft together a Menu of 4-5 Neapolitan pizzas specifically for your event. Everything is
-            made fresh onsite, we handle setup and teardown for an stress-free experience.
+            We craft real Neapolitan pizza with just four ingredients: Italian 00 flour, water, salt, and fresh yeast. Our dough is prepared 24 hours ahead of each event for perfect texture: light and digestible yet delicious. Each pizza cooks in just 90 seconds at 850°F in our Ooni ovens. Our all-you-can-eat buffet style keeps hot pizzas coming every few minutes. We will craft together a Menu of 4-5 Neapolitan pizzas specifically for your event. Everything is made fresh onsite — we handle setup and teardown for a stress-free experience.
         </p>
 
         <!-- ═══════════════ OUR SETUP ═══════════════ -->
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Setup</h2>
         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-            We're not a Food Truck. Our mobile set up goes wherever you need us, inside, outside, backyard or beyond. No parking, weight or space restrictions. Just a 10X10 space.
+            We're not a Food Truck. Our mobile set up goes wherever you need us, inside, outside, backyard or beyond. No parking, weight or space restrictions. Just a 10×10 space.
         </p>
 
         <!-- ═══════════════ PHOTO GALLERY ═══════════════ -->
-        <div class="px-4 pt-4 pb-6">
+        <div class="px-4 pt-4 pb-2">
             <div class="grid md:grid-cols-2 gap-4">
                 <div class="overflow-hidden rounded-lg" style="aspect-ratio: 4/3;">
-                    <img src="{{ '/assets/oven1.png' | relative_url }}" alt="Fresh Neapolitan pizza out of the oven" class="w-full h-full" style="object-fit: cover;">
+                    <img src="{{ '/assets/oven1.png' | relative_url }}"
+                         alt="Fresh Neapolitan pizza out of the oven"
+                         class="w-full h-full"
+                         style="object-fit: cover;">
                 </div>
                 <div class="overflow-hidden rounded-lg" style="aspect-ratio: 4/3;">
-                    <img src="{{ '/assets/oven2.png' | relative_url }}" alt="Pizza baking in the Ooni oven at 850°F" class="w-full h-full" style="object-fit: cover;">
+                    <img src="{{ '/assets/oven2.png' | relative_url }}"
+                         alt="Pizza baking in the Ooni oven at 850°F"
+                         class="w-full h-full"
+                         style="object-fit: cover;">
                 </div>
             </div>
         </div>
 
+        <!-- ═══════════════ DIVIDER ═══════════════ -->
+        <div style="height: 1px; background: #363636; margin: 2rem 1rem;"></div>
+
         <!-- ═══════════════ VIDEO HIGHLIGHT ═══════════════ -->
-        <div class="flex justify-center px-4 pt-2 pb-6">
+        <div class="flex justify-center px-4 pb-8">
             <div class="overflow-hidden rounded-lg w-full" style="max-width: 360px; aspect-ratio: 9/16;">
                 <video
                     autoplay
@@ -71,9 +78,8 @@ permalink: /
                     muted
                     playsinline
                     class="w-full h-full"
-                    style="object-fit: cover;"
-                    src="{{ '/assets/highlight.mp4' | relative_url }}"
-                    type="video/mp4">
+                    style="object-fit: cover; display: block;">
+                    <source src="{{ '/assets/highlight.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
         </div>
@@ -119,9 +125,8 @@ permalink: /
             </div>
         </div>
 
-        <div class="flex px-4 py-3 justify-center">
-            <a href="{{ '/book/' | relative_url }}"
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-white text-black text-base font-bold leading-normal tracking-[0.015em]">
+        <div class="flex px-4 py-6 justify-center">
+            <a href="{{ '/book/' | relative_url }}" class="btn-primary" style="min-width: 260px;">
                 <span class="truncate">Book Us For Your Next Event</span>
             </a>
         </div>
@@ -133,6 +138,7 @@ permalink: /
         </p>
 
         <div class="flex flex-col gap-8 overflow-x-hidden bg-[#1a1a1a] p-4">
+
             <!-- Two workshop options -->
             <div class="grid md:grid-cols-2 gap-4">
                 <div class="flex flex-col gap-3 bg-[#262626] p-6 rounded-lg border border-[#363636]">
@@ -140,12 +146,9 @@ permalink: /
                     <p class="text-white text-base font-normal leading-normal">
                         Bring the experience to the home, pizza class at your house with your family &amp; friends.
                     </p>
-                    <div class="flex gap-2">
-                        <a href="{{ '/workshops/' | relative_url }}"
-                        class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-white text-black text-base font-bold leading-normal tracking-[0.015em]">
+                    <a href="{{ '/workshops/' | relative_url }}" class="btn-primary" style="min-width: 84px;">
                         <span class="truncate">Request a Pizza Class at Your Home</span>
-                        </a>
-                    </div>
+                    </a>
                     <p class="text-[#adadad] text-sm font-normal leading-normal">
                         Tip: Gift certificates coming soon (great for birthdays + anniversaries).
                     </p>
@@ -156,12 +159,9 @@ permalink: /
                     <p class="text-white text-base font-normal leading-normal">
                         Join us at our commercial kitchen with your friends and family. Learn to make pizza — 10 spots availability only.
                     </p>
-                    <div class="flex gap-2">
-                        <a href="{{ '/workshops/' | relative_url }}"
-                        class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-white text-black text-base font-bold leading-normal tracking-[0.015em]">
+                    <a href="{{ '/workshops/' | relative_url }}" class="btn-primary" style="min-width: 84px;">
                         <span class="truncate">Request a Private Class</span>
-                        </a>
-                    </div>
+                    </a>
                     <p class="text-[#adadad] text-sm font-normal leading-normal">
                         We bring ingredients + setup + ovens. You bring the people.
                     </p>
@@ -210,6 +210,7 @@ permalink: /
         <!-- ═══════════════ CUSTOMER REVIEWS ═══════════════ -->
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Customer Reviews</h2>
         <div class="flex flex-col gap-8 overflow-x-hidden bg-[#1a1a1a] p-4">
+
             <div class="flex flex-col gap-3 bg-[#1a1a1a]">
                 <p class="text-white text-base font-medium leading-normal">Silvia P.</p>
                 <div class="flex gap-0.5">
@@ -223,6 +224,7 @@ permalink: /
                     I recently hired Two Guys Making Pizza for two separate club events—a Tennis Social and a Golf Social—and they were absolutely fantastic. From start to finish, they were professional, organized, and a pleasure to work with. Their setup was seamless and added a great energy to both events. Guests loved the interactive aspect of watching the pizzas being made fresh on-site, and the smell alone drew a crowd! But the real highlight? The pizza. Truly phenomenal—crispy, flavorful, and made with high-quality ingredients. It was the talk of both events and left everyone wanting more. I highly recommend Two Guys Making Pizza for any event. They deliver not just great food, but a memorable experience.
                 </p>
             </div>
+
             <div class="flex flex-col gap-3 bg-[#1a1a1a]">
                 <p class="text-white text-base font-medium leading-normal">Jen M</p>
                 <div class="flex gap-0.5">
@@ -236,6 +238,7 @@ permalink: /
                     We hired @twoguysmakingpizza for our HS Girls Lacrosse banquet and they did an amazing job they fed over 100 girls and parents and the pizza was amazing! I would highly recommend them for events and parties!
                 </p>
             </div>
+
             <div class="flex flex-col gap-3 bg-[#1a1a1a]">
                 <p class="text-white text-base font-medium leading-normal">Lee S. C.</p>
                 <div class="flex gap-0.5">
@@ -249,6 +252,7 @@ permalink: /
                     The best! I had them cater my birthday with ~40 people last year and they were a huge hit! The pizzas are delicious and fresh, and everyone loved the entertainment of watching the pizzas be made! Two Guys are such a unique and easy catering idea that everyone will love - can't recommend them enough!
                 </p>
             </div>
+
             <div class="flex flex-col gap-3 bg-[#1a1a1a]">
                 <p class="text-white text-base font-medium leading-normal">Christopher M</p>
                 <div class="flex gap-0.5">
@@ -262,6 +266,7 @@ permalink: /
                     150 amazing pizzas for 130 guests in 3 hours!!! Amazing job!!!
                 </p>
             </div>
+
         </div>
     </div>
 </div>

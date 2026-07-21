@@ -2,9 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles for Heat Tire Feel */
+/* Custom styles for Two Guys Making Pizza */
 
-/* Additional Tailwind customizations can go here */
+/* ── Primary button — white pill used site-wide ── */
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  height: 48px;
+  padding: 0 1.25rem;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e5e5e5;
+}
+
+.btn-primary-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  height: 40px;
+  padding: 0 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary-sm:hover {
+  background-color: #e5e5e5;
+}
 
 /* Mobile menu functionality */
 .menu-category.hidden {
@@ -13,12 +56,12 @@
 
 /* Star rating styles */
 .star-rating.active {
-  color: #fbbf24; /* yellow-400 */
+  color: #fbbf24;
 }
 
-/* Smooth transitions */
-* {
-  transition: all 0.3s ease;
+/* Smooth transitions for interactive elements only (not all elements) */
+a, button {
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
 }
 
 /* Custom scrollbar */
@@ -27,14 +70,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #1a1a1a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #363636;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #555555;
 }
